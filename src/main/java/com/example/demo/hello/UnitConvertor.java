@@ -20,8 +20,9 @@ public final class UnitConvertor {
 	public static final String GB = "GB";
 	public static final String TB = "TB";
 	public static final String PB = "PB";
-	private static final int DEFAULT_SCALE = 2;
-	private static final RoundingMode DEFAULT_ROUNDING_MODE = RoundingMode.UNNECESSARY;
+	private static final int DEFAULT_SCALE = 3;
+	// TODO 기본 라운딩 처리 확인
+	private static final RoundingMode DEFAULT_ROUNDING_MODE = RoundingMode.CEILING;
 	private static final String[] UNITS = {B, KB, MB, GB, TB, PB};
 	private static final Map<String, Integer> unitIndexes = new HashMap<>();
 
